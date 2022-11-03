@@ -1,0 +1,30 @@
+.footer-container{
+    margin-top: 5%;
+    background-color: var(--background-color-2);
+    &__row{
+        padding: 3%;
+        & .address-container{
+            &__header{
+                color: #fff !important;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 80%;
+                    height: 1px;
+                    background-color: #fff;
+                }
+            }
+            &__link-container{
+                color: #fff;
+                & a{
+                    color: #fff;
+                    margin-top: 5%;
+                }
+            }
+        }
+        
+    }
+}

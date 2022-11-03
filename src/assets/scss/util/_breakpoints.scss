@@ -1,0 +1,18 @@
+//scss maps
+$breakpoints-up: (
+    'sm' : 576px,
+    'md' : 768px,
+    'lg' : 992px,
+    'xl' : 1200px,
+    'xxl': 1440px,
+);
+@mixin breakpoints($size) {
+    @media (min-width: map.get($breakpoints-up,$size)) {
+        @content
+    }
+};
+@mixin breakpoints-mb(){
+    @media (max-width: map.get($breakpoints-up,sm)){
+        @content
+    }
+}

@@ -1,0 +1,38 @@
+.login-container{
+    padding-top: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url('https://iaterial.sirv.com/egety-maze-mark/The-Future-of-Commerce-is-Shoppable-Ads-980x460%20.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__col-left{
+        &__sub{
+            background-color: var(--background-color-2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-top: 15%;
+            padding-bottom: 10%;
+            border: 1px solid var(--text-color);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+            color: var(--text-color-2);
+        }
+        &__welcome{
+            margin-bottom: 5%;
+        }
+        &__description{
+            margin-bottom: 5%;
+        }
+    }
+
+    
+}
+.login-btn{
+    border: 1px solid transparent;
+    background-color: transparent;
+}
